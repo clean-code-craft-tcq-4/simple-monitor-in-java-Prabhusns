@@ -9,9 +9,9 @@ public class RangeValidator {
 
 	public static boolean rangeValidator(RangeInputPOJO inputPOJO) {
 		if (inputPOJO.isLowLimitCheck()) {
-			lowRangeCheck(inputPOJO);
+			return lowRangeCheck(inputPOJO);
 		} else if (!inputPOJO.isLowLimitCheck()) {
-			highRangeCheck(inputPOJO);
+			return highRangeCheck(inputPOJO);
 		}
 		System.out.println(inputPOJO.getComputationName() + " is OKAY");
 		return true;
