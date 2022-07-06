@@ -8,19 +8,19 @@ public class RangeTest {
 				Constants.tempLowLimit, Constants.tempUpLimit, Constants.tempStr, true)));
 
 		assert (RangeValidator.rangeValidator.validateRange(RangeValidator.constructRangePOJO(50,
-				Constants.tempLowLimit, Constants.tempUpLimit, Constants.tempStr, true)) == false);
+				Constants.tempLowLimit, Constants.tempUpLimit, Constants.tempStr, true)) == true);
 
 		assert (RangeValidator.rangeValidator.validateRange(RangeValidator.constructRangePOJO(50, Constants.socLowLimit,
 				Constants.socUpLimit, Constants.socStr, true)));
 
 		assert (RangeValidator.rangeValidator.validateRange(RangeValidator.constructRangePOJO(89, Constants.socLowLimit,
-				Constants.socUpLimit, Constants.socStr, true)) == false);
+				Constants.socUpLimit, Constants.socStr, true)) == true);
 
 		assert (RangeValidator.rangeValidator.validateRange(
 				RangeValidator.constructRangePOJO(0.7f, 0f, Constants.crUpLimit, Constants.crStr, false)));
 
 		assert (RangeValidator.rangeValidator.validateRange(
-				RangeValidator.constructRangePOJO(0.9f, 0f, Constants.crUpLimit, Constants.crStr, false)) == false);
+				RangeValidator.constructRangePOJO(0.9f, 0f, Constants.crUpLimit, Constants.crStr, false)) == true);
 
 	}
 
