@@ -20,7 +20,7 @@ public class RangeTest {
 				RangeValidator.constructRangePOJO(0.7f, 0f, Constants.crUpLimit, Constants.crStr, false)));
 
 		assert (RangeValidator.rangeValidator.validateRange(
-				RangeValidator.constructRangePOJO(0.9f, 0f, Constants.crUpLimit, Constants.crStr, false)) == true);
+				RangeValidator.constructRangePOJO(0.9f, 0f, Constants.crUpLimit, Constants.crStr, false)) == false);
 
 	}
 
