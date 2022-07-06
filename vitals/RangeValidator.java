@@ -8,14 +8,28 @@ public class RangeValidator {
 	}
 
 	public static boolean rangeValidator(RangeInputPOJO inputPOJO) {
-		if (inputPOJO.isLowLimitCheck() && inputPOJO.getInputValue() < inputPOJO.getlLimit()) {
+		if (inputPOJO.isLowLimitCheck()) {
+			lowRangeCheck(inputPOJO);
+		} else if (!inputPOJO.isLowLimitCheck()) {
+			highRangeCheck(inputPOJO);
+		}
+		System.out.println(inputPOJO.getComputationName() + " is OKAY");
+		return true;
+	}
+
+	public static boolean lowRangeCheck(RangeInputPOJO inputPOJO) {
+		if (inputPOJO.getInputValue() < inputPOJO.getlLimit()) {
 			System.out.println(inputPOJO.getComputationName() + " is LOW");
 			return false;
-		} else if (inputPOJO.getInputValue() > inputPOJO.getuLimit()) {
+		}
+		return true;
+	}
+
+	public static boolean highRangeCheck(RangeInputPOJO inputPOJO) {
+		if (inputPOJO.getInputValue() > inputPOJO.getlLimit()) {
 			System.out.println(inputPOJO.getComputationName() + " is HIGH");
 			return false;
 		}
-		System.out.println(inputPOJO.getComputationName() + " is OKAY");
 		return true;
 	}
 
