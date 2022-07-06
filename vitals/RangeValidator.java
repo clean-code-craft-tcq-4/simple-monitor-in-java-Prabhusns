@@ -26,7 +26,7 @@ public class RangeValidator {
 	}
 
 	public static boolean highRangeCheck(RangeInputPOJO inputPOJO) {
-		if (inputPOJO.getInputValue() > inputPOJO.getlLimit()) {
+		if (inputPOJO.getInputValue() > inputPOJO.getuLimit()) {
 			System.out.println(inputPOJO.getComputationName() + " is HIGH");
 			return false;
 		}
