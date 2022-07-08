@@ -15,11 +15,11 @@ public class BatteryChecker {
 		this.inputPOJO = inputPOJO;
 	}
 
-	public BatteryChecker(TemperatureChecker tempChecker, SOCChecker socChecker, ChargeRateChecker chargeRateChecker) {
+	public BatteryChecker() {
 		super();
-		this.tempChecker = tempChecker;
-		this.socChecker = socChecker;
-		this.chargeRateChecker = chargeRateChecker;
+		this.tempChecker = new TemperatureChecker();
+		this.socChecker = new SOCChecker();
+		this.chargeRateChecker = new ChargeRateChecker();
 	}
 
 	public boolean checkBatteryCondition() {

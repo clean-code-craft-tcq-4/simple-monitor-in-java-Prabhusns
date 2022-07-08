@@ -32,7 +32,7 @@ public class BatteryTest {
 	}
 
 	public static BatteryChecker createBatteryInstance() {
-		return new BatteryChecker(new TemperatureChecker(), new SOCChecker(), new ChargeRateChecker());
+		return new BatteryChecker();
 	}
 
 }
