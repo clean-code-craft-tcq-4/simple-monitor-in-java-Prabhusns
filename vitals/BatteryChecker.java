@@ -26,7 +26,10 @@ public class BatteryChecker {
 		boolean isTempOk = tempChecker.validateRange(inputPOJO);
 		boolean isSOCOk = socChecker.validateRange(inputPOJO);
 		boolean isCROk = chargeRateChecker.validateRange(inputPOJO);
+		return checkBattery(isTempOk, isCROk, isSOCOk);
+	}
 
+	public boolean checkBattery(boolean isTempOk, boolean isCROk, boolean isSOCOk) {
 		if (isTempOk && isCROk && isSOCOk) {
 			System.out.println("Battery is Okay");
 			return true;
