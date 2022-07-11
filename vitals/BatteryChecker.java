@@ -1,5 +1,8 @@
 package vitals;
 
+import vitals.Utils.LanguageHelper;
+import vitals.model.RangeInputPOJO;
+
 public class BatteryChecker {
 
 	TemperatureChecker tempChecker;
@@ -18,11 +21,11 @@ public class BatteryChecker {
 		this.inputPOJO = inputPOJO;
 	}
 
-	public BatteryChecker() {
+	public BatteryChecker(LanguageHelper languageUtils) {
 		super();
-		this.tempChecker = new TemperatureChecker();
-		this.socChecker = new SOCChecker();
-		this.chargeRateChecker = new ChargeRateChecker();
+		this.tempChecker = new TemperatureChecker(languageUtils);
+		this.socChecker = new SOCChecker(languageUtils);
+		this.chargeRateChecker = new ChargeRateChecker(languageUtils);
 	}
 
 	public boolean checkBatteryCondition() {
