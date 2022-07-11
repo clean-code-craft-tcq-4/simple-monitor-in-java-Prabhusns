@@ -1,4 +1,4 @@
-package vitals.utils;
+package vitals;
 
 import vitals.enums.Status;
 import vitals.enums.Unit;

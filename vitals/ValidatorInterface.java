@@ -1,4 +1,4 @@
-package vitals.utils;
+package vitals;
 
 import vitals.model.RangeInputPOJO;
 
