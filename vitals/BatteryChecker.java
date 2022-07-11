@@ -12,9 +12,7 @@ public class BatteryChecker {
 	boolean isTempOk = false;
 	boolean isCROk = false;
 	boolean isSOCOk = false;
-   
 
-   
 	public RangeInputPOJO getInputPOJO() {
 		return inputPOJO;
 	}
