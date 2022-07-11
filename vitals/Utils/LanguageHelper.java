@@ -1,4 +1,4 @@
-package vitals.Utils;
+package vitals.utils;
 
 import java.util.Locale;
 import java.util.ResourceBundle;

@@ -1,7 +1,10 @@
 package vitals;
 
-import vitals.Utils.LanguageHelper;
+import vitals.enums.Status;
 import vitals.model.RangeInputPOJO;
+import vitals.utils.LanguageHelper;
+import vitals.utils.RangeValidator;
+import vitals.utils.ValidatorInterface;
 
 public class TemperatureChecker implements ValidatorInterface {
 	LanguageHelper languageUtils;

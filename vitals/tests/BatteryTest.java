@@ -1,10 +1,10 @@
 package vitals.tests;
 
 import vitals.BatteryChecker;
-import vitals.RangeValidator;
-import vitals.Unit;
-import vitals.Utils.Constants;
-import vitals.Utils.LanguageHelper;
+import vitals.enums.Unit;
+import vitals.utils.Constants;
+import vitals.utils.LanguageHelper;
+import vitals.utils.RangeValidator;
 
 public class BatteryTest {
 

@@ -1,4 +1,4 @@
-package vitals.Utils;
+package vitals.utils;
 
 public interface Constants {
 

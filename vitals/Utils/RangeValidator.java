@@ -1,6 +1,7 @@
-package vitals;
+package vitals.utils;
 
-import vitals.Utils.Constants;
+import vitals.enums.Status;
+import vitals.enums.Unit;
 import vitals.model.RangeInputPOJO;
 
 public class RangeValidator {

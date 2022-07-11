@@ -1,7 +1,7 @@
 package vitals;
 
-import vitals.Utils.LanguageHelper;
 import vitals.model.RangeInputPOJO;
+import vitals.utils.LanguageHelper;
 
 public class BatteryChecker {
 

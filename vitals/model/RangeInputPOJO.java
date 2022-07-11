@@ -1,6 +1,6 @@
 package vitals.model;
 
-import vitals.Unit;
+import vitals.enums.Unit;
 
 public class RangeInputPOJO {
 	float inputValue;
