@@ -11,7 +11,7 @@ public class BatteryTest {
 	LanguageHelper languageUtils;
 
 	public BatteryTest(LanguageHelper languageUtils) {
-		this.languageUtils = languageUtils;
+		this.languageUtils = languageUtils;   
 	}
 
 	public static void testBattery(LanguageHelper languageUtils) {
@@ -44,7 +44,7 @@ public class BatteryTest {
 
 		assert (highCRChecker.checkBatteryCondition() == false);
 
-		assert (normalTempChecker.checkBatteryCondition() == false);
+		assert (normalTempChecker.checkBatteryCondition() == true);
 
 
 	}
